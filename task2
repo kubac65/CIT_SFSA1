@@ -1,0 +1,5 @@
+1) ps --no-headers -U root -u root | wc -l
+2) printenv | grep $(whoami)
+3) ps -ef | grep -E "\[*\]"
+4) 
+5) 
