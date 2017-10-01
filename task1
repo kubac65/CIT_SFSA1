@@ -1,0 +1,10 @@
+1) echo ${EMPLOYE_ID:0:4}
+2) find /etc -type f -name *[dn]		#this list the files in /etc and its children directories as the question didn't explicitly specified
+3) ps -U user_name -u user_name > proclist
+4) cp -r data copy_of_data
+5) rm -rf data
+6) chmod u+x *.sh
+7) chmod -011 *.sh
+8) tar -c -f books.tar book*		#question didn't mention compression, therefore uncompressed archive is created
+9) grep -E 'apple|banana|orange' fruits 
+10) sed -E "s/meat|ham|pork/veggie/" recipe 
