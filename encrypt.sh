@@ -6,6 +6,7 @@ if [ "$#" -eq 0 ]; then
 	exit 2 
 elif [ "$1" == "--help" ]; then
 	echo "usage: encrypt.sh <filename>"
+	exit 3
 fi
 
 F_NAME=$1
