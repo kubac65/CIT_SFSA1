@@ -1,5 +1,10 @@
 1) ps --no-headers -U root -u root | wc -l
 2) printenv | grep $(whoami)
 3) ps -ef | grep -E "\[*\]"
-4) 
-5) 
+4) cat /usr/share/dict/words | grep a | grep i | grep o | grep u | grep e 
+5) cat /etc/passwd | cut -d ":" -f1,6 --output-delimiter=" "
+6) ls -al /etc | grep -E "^.r..r..r" 
+7) ls -Alt --time-style=iso /etc | tail -n 1 | tr -s " " | cut -d " " -f6
+8) ls -l /etc/ | tr -s " " | cut -d " " -f 6,7 | uniq | wc -l
+9) fortune | tr "aeiou" "AEIOU"
+10) grep -lr "mark" /usr/share/games/fortunes | wc -l 
