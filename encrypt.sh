@@ -26,5 +26,10 @@ fi
 
 # Encrypt the file
 openssl enc -e -aes256 -in "$F_NAME" -out "$F_NAME.enc" -pass pass:$ENC_KEY
+
+if [ "$?" -ne 0 ]; then
+	exit $?
+fi
+
 echo "Encrypted file saved at $F_NAME.enc"
 exit 0
