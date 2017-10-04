@@ -1,11 +1,15 @@
 #!/bin/bash
 
+function help_message {
+	echo "usage: $0 <filename>"
+}
+
 # Verify cli argument
 if [ "$#" -eq 0 ]; then
-	echo "use --help flag to get the usage info"
+	help_message
 	exit 2 
 elif [ "$1" == "--help" ]; then
-	echo "usage: encrypt.sh <filename>"
+	help_message
 	exit 3
 fi
 
